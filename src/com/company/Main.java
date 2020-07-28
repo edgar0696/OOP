@@ -1,6 +1,7 @@
 package com.company;
 
 import com.sun.xml.internal.bind.v2.runtime.output.FastInfosetStreamWriterOutput;
+import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
 
 public class Main {
 
@@ -34,7 +35,28 @@ public class Main {
             int areaR1 = r1.getArea();
         System.out.println(areaR1);
 
+        Rectangle r2 = new Rectangle(7,12);
+        int areaR2 = r2.getArea();
+        System.out.println(areaR2 + " and " + areaR1);
 
+        System.out.println(r2.getPerimetr());
+
+        // Мы хотим в нашем 4 угольнике Rectangle R2 увеличить длинну на 3
+        // Это делается с помощю Seterra !!!
+        r2.setLength(10); // Добавили 3 - изменили 7 на 10
+        System.out.println(r2.getArea());
+        r2.setWidth(20); // добавили 8 - изменили 12 на 20
+        System.out.println(r2.getWidth());
+
+
+        System.out.println(r2.toString());
+
+        Rectangle r3 = new Rectangle();
+        r3.setWidth(5);
+        r3.setLength(6);
+        System.out.println(r3.toString());
+
+        //Трапеция ДЗ
 
     }
 }
