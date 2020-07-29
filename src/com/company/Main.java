@@ -56,7 +56,7 @@ public class Main {
         r3.setLength(6);
         System.out.println(r3.toString());
 
-        //Трапеция ДЗ Тратата
+        //Трапеция ДЗ
 
     }
 }
